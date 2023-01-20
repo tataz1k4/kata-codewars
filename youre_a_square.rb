@@ -23,8 +23,8 @@
 # isSquare  25  // => true
 # isSquare  26  // => false
 
-def is_square(x)
-  puts x < 0 ? false : Math.sqrt(x) % 1 == 0
+def square?(x)
+  puts x.negative? ? false : Math.sqrt(x) % 1.zero?
 end
 
 is_square(6)

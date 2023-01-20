@@ -7,7 +7,7 @@
 # Don't forget the space after the closing parentheses!
 
 def create_phone_number(numbers)
-  puts numbers.insert(0, '(').insert(4, ')').insert(5, ' ').insert(9, '-').join()
+  puts numbers.insert(0, '(').insert(4, ')').insert(5, ' ').insert(9, '-').join
 end
 
 create_phone_number(40028922)
