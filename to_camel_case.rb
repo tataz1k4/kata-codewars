@@ -5,7 +5,7 @@
 #   "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 
 def to_camel_case(str)
-  puts array = str.gsub('_','-').split('-').map.with_index{ |word, i| i > 0 ? word.capitalize : word}.join
+  puts str.gsub('_', '-').split('-').map.with_index { |word, i| i.positive? ? word.capitalize : word }.join
 end
 
 to_camel_case('The-stealth_warrior')

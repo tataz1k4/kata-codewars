@@ -19,7 +19,7 @@ end
 
 # def generateHashtag(str)
 #   output = str.split.map(&:capitalize).insert(0, '#').join
-#   puts output.size < 140  && output.size > 1 ? output : false
+#   puts output.size > 140 || str.empty? ? false : output
 # end
 
-generateHashtag(' ')
+generateHashtag('#')
